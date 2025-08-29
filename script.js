@@ -1,0 +1,70 @@
+const professions = [
+  "Accountant",
+  "Administrator",
+  "Lawyer",
+  "Architect",
+  "Artist",
+  "Business person",
+  "Cashier",
+  "Chef",
+  "Cleaner",
+  "Cook",
+  "Data Entry Clerk",
+  "Driver-House",
+  "Driver-Taxi/Company",
+  "Electrician",
+  "Engineer",
+  "Farmer",
+  "Finance Manager",
+  "General Manager",
+  "Govt Department",
+  "Graphic Designer",
+  "Hairdresser (Barber)",
+  "Interior Designer",
+  "IT Administrator",
+  "Journalist",
+  "Lab Technician",
+  "Labourer",
+  "Maid",
+  "Marketing Executive",
+  "Manager",
+  "Mechanic",
+  "Medical Assistant",
+  "Nurse",
+  "Officer",
+  "Operator",
+  "Other",
+  "Painter",
+  "Pharmacist",
+  "Physician (Doctor)",
+  "Plumber/Electrician",
+  "Salesperson",
+  "Secretary",
+  "Security Guard",
+  "Software Engineer",
+  "Surveyor",
+  "Teacher",
+  "Technician",
+  "Tradesman",
+  "Waiting staff",
+  "Web Designer",
+  "Sales Supervisor",
+  "Store keeper",
+  "Radiographer",
+  "Business person",
+  "Waiter",
+  "Sales Executive",
+  "Musliyar",
+  "IT Professional",
+  "Media"
+];
+
+  
+  const select = document.querySelector("select[name='Profession']");
+
+  professions.forEach(prof => {
+    const option = document.createElement("option");
+    option.value = prof;
+    option.textContent = prof;
+    select.appendChild(option);
+  });
